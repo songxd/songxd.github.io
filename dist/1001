@@ -1,0 +1,16 @@
+{
+  "attributes": [
+    {
+      "trait_type": "attr1",
+      "value": "attr_value1"
+    }
+,{
+      "trait_type": "attr2",
+      "value": "attr_value2"
+    }
+  ],
+  "description": "1001 desc",
+  "external_url": "https://github.com/songxd/file22",
+  "image": "https://github.com/songxd/file22/blob/main/1001.jpg",
+  "name": "1001"
+}
