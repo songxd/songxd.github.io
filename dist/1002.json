@@ -9,7 +9,7 @@
       "value": "attr_value2_002"
     }
     ,{
-      "name": "name",
+      "trait_type": "name",
       "value": "la"
     }
   ],
