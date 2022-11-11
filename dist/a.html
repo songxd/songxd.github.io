@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>跨域测试</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+          console.info("ready");
+
+     
+            $("#btn").click(function () {
+                console.info("调用接口");
+                $.ajax({
+                    url: "http://songxd.github.io/dist/1001.json",
+                    type: "GET",
+                    dataType: "json",  //指定服务器返回的数据类型
+                    success: function (data) {
+                        console.info("调用success");
+                       var result = JSON.stringify(data);
+                       $("#text").val(result);
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="跨域获取数据" />
+    <textarea id="text" style="width: 400px; height: 100px;"></textarea>
+
+</body>
+</html>
